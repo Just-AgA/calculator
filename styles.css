@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    border: 2px solid black;
+    width: 25vw;
+    height: 55vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.square-view {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+
+.upper, .middle, .lower, .clear, .operators {
+    display: flex;
+}
+
+button{
+    flex: 1;
+    height: 100%;
+}
+
+#zero {
+    flex: 2;
+    padding-right: 3px;
+}
+
+.operators, .upper, .middle, .lower, .clear {
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display {
+    flex-grow: 0.5;
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    align-items: center;
+    padding: 20px 4px;
+}
+
+.clear div, .upper div, .middle div, .lower div {
+    flex-basis: 75%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
