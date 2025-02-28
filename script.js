@@ -18,4 +18,10 @@ function divideNumbers(num1, num2){
     return num1 / num2;
 }
 
-console.log(divideNumbers(3, 0))
+// Create variables for the selectors and operators & operands
+const display = document.querySelector(".display");
+const squareView = document.querySelector(".square-view");
+const operators = document.querySelector(".operators");
+let leftOperand;
+let rightOperand;
+let operator;
