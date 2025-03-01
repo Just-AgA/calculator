@@ -37,3 +37,15 @@ const digits = document.querySelectorAll(".digit");
 const dot = document.querySelector("#dot");
 
 
+// Create a NodeList for the buttons where we get their value
+digits.forEach((digit)=>{
+    digit.addEventListener("click", (event) => {
+        let number = event.target.innerText;
+        if(number[0] === "."){
+            display.innerText += 0;
+            dot.disabled = "true";
+        }
+        number.replace(/^0+/, "");
+        display.innerText += number;
+    })
+})
