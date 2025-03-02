@@ -90,3 +90,14 @@ digits.forEach((digit) => {
     });
 });
 
+// Function to clear everything from the display
+function clearDisplay() {
+    result.innerText = "";
+    leftOperand = "";
+    rightOperand = "";
+    operator = "";
+    isResultDisplayed = false;
+}
+
+clearAll.addEventListener("click", clearDisplay);
+
