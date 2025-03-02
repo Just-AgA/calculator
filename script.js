@@ -113,3 +113,12 @@ equal.addEventListener("click", () => {
     }
 });
 
+// Percentage: Convert the current result into a percentage
+percentButton.addEventListener("click", () => {
+    let currentResult = parseFloat(result.innerText);
+    if (!isNaN(currentResult)) {
+        result.innerText = (currentResult / 100).toString();  // Convert to percentage
+        isResultDisplayed = true;
+    }
+    
+});
