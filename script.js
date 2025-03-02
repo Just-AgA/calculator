@@ -101,3 +101,15 @@ function clearDisplay() {
 
 clearAll.addEventListener("click", clearDisplay);
 
+// Handle the equal button press to perform the calculation
+equal.addEventListener("click", () => {
+    if (leftOperand !== "" && operator !== "" && rightOperand !== "") {
+        const resultValue = operate(leftOperand, operator, rightOperand).toFixed(16);
+        result.innerText = resultValue;
+        leftOperand = resultValue;  // Store the result as the left operand for further calculations
+        rightOperand = "";         
+        operator = "";
+        isResultDisplayed = true;             
+    }
+});
+
