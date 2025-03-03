@@ -21,7 +21,7 @@
 }
 
 
-.upper, .middle, .lower, .clear, .operators {
+.upper, .middle, .lower, .clear, .lower-div {
     display: flex;
 }
 
@@ -35,7 +35,7 @@ button{
     padding-right: 3px;
 }
 
-.operators, .upper, .middle, .lower, .clear {
+.lower-div, .upper, .middle, .lower, .clear {
     flex: 1;
     justify-content: space-evenly;
     align-items: center;
