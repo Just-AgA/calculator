@@ -69,29 +69,35 @@ button{
     align-items: center;
     padding-right: 5px;
     border-radius: 4px;
-    border: 1px solid rgb(7, 129, 129);
+    background-color: rgb(49, 45, 45);
+    color: white;
 }
 
 .digit {
     background-color: rgb(30, 160, 177);
+    border: 1px solid black;
 }
 
 div .operator {
     background-color: rgb(236, 240, 44);
+    border: 1px solid black;
 }
 
 #equal {
     background-color: rgb(20, 241, 20);
+    border: 1px solid black;
 }
 
 #clear-all {
-    background-color: rgb(241, 77, 77);
+    background-color: rgb(238, 42, 42);
+    border: 1px solid black;
 }
 
 #percentage {
     background-color: orange;
+    border: 1px solid black;
 }
 
 .square-view, .lower-div, .wrapper {
-    background-color: rgb(6, 243, 204);
+    background-color: rgb(211, 85, 85);
 }
